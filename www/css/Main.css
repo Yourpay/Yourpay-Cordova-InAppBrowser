@@ -1,0 +1,370 @@
+/* shared */
+*{
+    margin: 0;
+    padding:0;
+}
+.btn{
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 3em;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.settingsWrapper{
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #010712;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.settingsMenu{
+    float: right;
+    clear: both;
+    margin-top: 5px;
+    text-align: center;
+    padding: 10px;
+    color:#ffa100;
+}
+.settingsItem{
+    margin-bottom: 25px;
+}
+.Discount:hover, .StartPayment:hover
+{
+    color:black;
+}
+#main{
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.main{
+    background-color: #010712; 
+}
+.content{
+    height: 100%;
+    text-align: center;
+    overflow: auto;
+    padding-top: 30px; 
+    color:white;
+    background-color: #2d2f35;
+}
+.title{
+    background-color: #010712;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom-style: inset;
+    border-color: #ffa100;
+    border-width: 2px;
+}
+/*Persistent header*/
+.headWrapper{
+    position:fixed;
+    background-color: #010712;
+    padding: 10px 10px 10px 10px;
+    height: 10vh;
+    display: none;
+}
+.settings{
+    float: right;
+}
+.home{
+    float:left;
+}
+.settings img, .home img{
+    max-height:40px;
+}
+.settingsClose{
+    float:right;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.currenyCheckbox{
+    transform: scale(2.5);
+    margin: 20px;
+}
+/* navsiden */ 
+.navWrapper{
+    height: 100%;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    background-color: #2d2f35;
+    overflow:auto;
+}
+/*// Navknapper //*/
+.navButton{
+    display: inline-block;
+    background-color: #010712;
+    color:  #ffa100;
+    width: 80%;
+    height: 140px;
+    margin-top: 30px;
+}
+.navButton img, .settingsItem img{
+    display:block;
+    margin:0 auto;
+}
+/*navside slut */
+
+/* SettingsSide */
+.settingsTemplate{
+    color: #ffa100;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #2d2f35;
+}
+/*paymentSide */
+.btn.numericShow {
+    width:  100%;
+    height: 130px;   
+    margin-top: 10px;
+    color: white;
+    background-color: #ffa100;
+}
+.numericFields, .payNavBtn{
+    color: #ffa100;
+    background-color: #010712;
+}
+.numericFields{
+    width: 31%;
+    height: 90px;
+}
+.numericMaster{
+    border-color: #ffa100;
+    background-color: #2d2f35;
+    color: white;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.searchField{
+    border-color: rgb(45, 47, 53);
+    padding: 10px;
+    color: rgb(255, 161, 0);
+    background-color: rgb(45, 47, 53);
+    box-shadow: 10px 10px 5px #010712;
+}
+.products{
+    margin: 10px 10px;
+    color: white;
+    background-color: #ffa100;
+    width:260px;
+    height:80px;
+}
+
+.footNav{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.productTblWrp{
+    background-color: #010712;
+    box-shadow: 0 1px 1px #ccc;
+    padding: 35px 60px;
+    margin: 50px auto;
+}
+
+.productTblWrp h1{
+    color:#fff;
+    font-size:3em;
+    font-weight: normal;
+    line-height:1;
+    text-shadow:0 3px 0 rgba(0,0,0,0.1);
+}
+
+.productTblWrp ul{
+    list-style:none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    text-align: left;
+    margin:20px 0 15px;
+}
+
+.productTblWrp ul li{
+    padding:20px 30px;
+    background-color:#ffa100;
+    margin-bottom:8px;
+    box-shadow:0 1px 1px rgba(0,0,0,0.1);
+    cursor:pointer;
+}
+
+.productTblWrp ul li span{
+    float:right;
+}
+
+.productTblWrp ul li.active{
+    background-color:#8ec16d;
+}
+.listE{
+    width:70%;
+    display:inline-block
+}
+.listInput{
+    width: 11%;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+div.total{
+    border-top:1px solid rgba(255,255,255,0.5);
+    padding:15px 30px;
+    font-size:20px;
+    font-weight:bold;
+    text-align: center;
+    color:#fff;
+}
+.discountTable {
+    color: white;
+    border-spacing: 10px;
+    border: solid #ffa100;
+    margin: auto;
+}
+.discountTable th{
+    font-size: 1.5em;
+    text-align: center;    
+}
+.discountTable tr{
+    font-size: 1em;
+}
+.label{
+    color:white;
+    font-size:20px;
+}
+.payLabels{
+    display:block;
+    margin-bottom: 15px;
+}
+.current{
+    border-bottom-color: #ffa100;
+    border-bottom-width: 4px;
+    margin-top: -2px;
+}
+/*paymentHistory*/
+.pageWrap{
+    height: 100%;
+}
+/*Product Catalog css*/
+.catalog{
+    border: solid #ffa100;
+    margin: auto;
+    width: 47%;
+    padding: 10px;
+}
+.edit{
+    background-color: #010712;
+    border: none;
+    color: #ffa100;
+    padding: 10px;
+    width: 70%;
+}
+.catalogE{
+    background-color: #010712;
+    margin-bottom: 10px;
+    overflow: hidden;
+    max-height: 70px;
+}
+.catalogImg{
+    float:left;
+}
+.catalogCenterWrapper{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+.catalogInput{
+    width:100%;
+    padding: 10px
+}
+.catalogBtnWrap{
+    margin-top:10px;
+}
+.catalogHeader{
+    margin-bottom: 10px;
+}
+/* animations */
+.animate-show-hide.ng-hide {
+    opacity: 0;
+}
+
+.animate-show-hide.ng-hide-add,
+.animate-show-hide.ng-hide-remove {
+    transition: all linear 0.5s;
+}
+
+.settingsWrapper {
+    border: 1px solid black;
+    opacity: 1;
+    padding: 10px;
+}
+.centertable {
+    margin: auto;
+}
+input {
+    font-size: 16px; /* MAG 04-08-17, Font-size fix made to prevent Zoom */
+}
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}

@@ -1,0 +1,96 @@
+{
+  "reader": {
+    "identifier": "d80ad70e-86fa-4322-9a93-4a77280779aa",
+    "model": "MIURA_M010",
+    "created": "2016-10-12 07:58:38",
+    "status": "ACTIVE",
+    "details": {
+      "serialNo": "010323131",
+      "hardwareRevision": "M010-PROD01-v2-2",
+      "terminalIds": {
+        "MAESTRO": "R0009880",
+        "MASTERCARD": "R0009880",
+        "VISA": "R0009880",
+        "VISA_ELECTRON": "R0009880"
+      }
+    }
+  },
+  "identifier": "70587ca4915a11e6803139bdd5a8d4be",
+  "groupIdentifier": "7058a3b7915a11e6803139bdd5a8d4be",
+  "customIdentifier": "100002202",
+  "referencedTransactionIdentifier": null,
+  "amount": 25,
+  "currency": "DKK",
+  "created": "2016-10-13 15:33:49",
+  "status": "DECLINED",
+  "statusDetails": {
+    "code": "DECLINED_MALFORMED_REQUEST",
+    "description": "DECLINED_MALFORMED_REQUEST",
+    "developerDescription": "DECLINED_MALFORMED_REQUEST"
+  },
+  "subject": "Yourpay",
+  "type": "CHARGE",
+  "mode": "LIVE",
+  "paymentDetails": {
+    "scheme": "MASTERCARD",
+    "source": "NFC_ICC",
+    "customerVerification": {
+      "type": null
+    },
+    "maskedAccount": "515621******0384",
+    "maskedTrack2": "515621XXXXXX0384D19092019533161800000F"
+  },
+  "processingDetails": {
+    "sessionIdentifier": "B23B719B6220240A6653AD0E88DFB0B4.lon-vm-fe01",
+    "sessionCreated": "2016-10-13 15:33:49",
+    "identifier": "8a83948657bcdbec0157beada8a95bf7",
+    "timestamp": "2016-10-13 15:33:54",
+    "status": "800.100.156"
+  },
+  "locationDetails": {
+    "latitude": null,
+    "longitude": null,
+    "horizontalAccuracy": null
+  },
+  "receiptDetails": {
+    "authorizationCode": "05",
+    "emv": {
+      "applicationID": "A0000000041010",
+      "applicationLabel": "MasterCard",
+      "terminalVerificationResult": "0000008000",
+      "transactionStatusInformation": null
+    }
+  },
+  "refundDetails": {
+    "process": [],
+    "status": "NON_REFUNDABLE",
+    "refundTransactions": [],
+    "refundableAmount": 0
+  },
+  "clearingDetails": {
+    "institute": "CREDORAX",
+    "transactionIdentifier": null,
+    "originalTransactionIdentifier": null,
+    "authorizationCode": null,
+    "completed": "2016-10-13 15:33:54",
+    "merchantId": null,
+    "terminalId": "R0009880",
+    "statusText": null
+  },
+  "merchant": {
+    "identifier": "c3515cdf-8aab-45c6-90c9-89228dc9d049",
+    "name": "AMC LASTBILER"
+  },
+  "captured": false,
+  "sdkDetails": {
+    "sdkVersion": "2.7.0",
+    "osVersion": "5.1",
+    "deviceOs": "Android",
+    "clientId": "7707c9cddb9b07d3"
+  },
+  "_links": {
+    "self": {
+      "href": "https://api.payworks.io:443/v2/transactions/70587ca4915a11e6803139bdd5a8d4be"
+    }
+  }
+}

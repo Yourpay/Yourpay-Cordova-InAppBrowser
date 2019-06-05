@@ -1,0 +1,25 @@
+<div class='row content' ng-init="data.refresh('/payment')">
+    <div class="numberBlock">
+        <article class="box post post-excerpt">
+            <input ng-model="ManualAmount" class="numericMaster" readonly style="display:none;">
+        </article>
+        <article class="box post post-excerpt">
+            <input type="button" value="1" class="btn numericFields" ng-click='numericFields("1")'>
+            <input type="button" value="2" class="btn numericFields" ng-click='numericFields("2")'>
+            <input type="button" value="3" class="btn numericFields" ng-click='numericFields("3")'><br />
+            <input type="button" value="4" class="btn numericFields" ng-click='numericFields("4")'>
+            <input type="button" value="5" class="btn numericFields" ng-click='numericFields("5")'>
+            <input type="button" value="6" class="btn numericFields" ng-click='numericFields("6")'><br />
+            <input type="button" value="7" class="btn numericFields" ng-click='numericFields("7")'>
+            <input type="button" value="8" class="btn numericFields" ng-click='numericFields("8")'>
+            <input type="button" value="9" class="btn numericFields" ng-click='numericFields("9")'><br />
+            <button type="button" class="btn numericFields" ng-click='numericFields("c")'>C</button>
+            <input type="button" value="0" class="btn numericFields" ng-click='numericFields("0")'>
+            <input type="button" value="00" class="btn numericFields" ng-click='numericFields("00")'><br />
+        </article>
+    </div> 
+    <div>
+        <button class="btn numericShow" ng-class="content" ng-click='payWeb()'>{{ 'STARTWEBPAYMENT' | translate }}</button> 
+    </div>
+</div>    
+

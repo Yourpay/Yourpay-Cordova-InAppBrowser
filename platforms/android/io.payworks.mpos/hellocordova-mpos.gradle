@@ -1,0 +1,39 @@
+repositories {
+    jcenter()
+    maven {
+        url "http://releases.payworks.io/artifactory/mpos-staging"
+    }
+}
+
+dependencies {
+	compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support:cardview-v7:23.1.1'
+
+    compile 'com.squareup:otto:1.3.5'
+    compile 'com.squareup.okhttp:okhttp:2.7.2'
+    compile 'com.parse.bolts:bolts-android:1.2.1'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.4.4'
+
+    compile 'io.payworks:mpos.android.ui:2.42.2'
+
+    // Add these two dependencies for PAX. The latest version staging SDK version: 2.41.1-20190208-8e9f5b2
+    compile 'io.payworks:mpos.android.ui:2.43.1-20190523-6909579'
+    compile 'io.payworks:mpos.android.accessories.pax:2.43.1-20190523-6909579'
+
+}
+
+android {
+  packagingOptions {
+    exclude 'META-INF/DEPENDENCIES.txt'
+    exclude 'META-INF/LICENSE.txt'
+    exclude 'META-INF/NOTICE.txt'
+    exclude 'META-INF/DEPENDENCIES'
+    exclude 'META-INF/LICENSE'
+    exclude 'META-INF/NOTICE'
+    exclude 'LICENSE.txt'
+    exclude 'asm-license.txt'
+    exclude 'META-INF/ASL2.0'
+  }
+}
+

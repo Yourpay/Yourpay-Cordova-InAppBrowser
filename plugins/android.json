@@ -1,0 +1,34 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.yourpay"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "io.yourpay"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "io.yourpay"
+    },
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "io.yourpay"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "io.yourpay"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "io.yourpay"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<div class='title'><img ng-src={{title}}></div>
+<div class='settingsTemplate'>    
+    <div class='settingsItem'>
+        {{'LANGUAGE' | translate}}
+        <button class='btn payNavBtn' ng-click="changeLanguage('da')">DANSK</button>
+        <button class='btn payNavBtn' ng-click="changeLanguage('en')">ENGLISH</button>               
+        <button class='btn payNavBtn' ng-click="changeLanguage('pl')">POLSKI</button>               
+    </div>
+    <div class='settingsItem'>
+        <label>{{'CURRENCY' | translate}}
+        </label>
+        <div>
+            <button class='btn payNavBtn'  ng-click='chooseCurrency(208)'>DKK</button>
+            <button class='btn payNavBtn'  ng-click='chooseCurrency(758)'>SEK</button>
+            <button class='btn payNavBtn'  ng-click='chooseCurrency(578)'>NOK</button>
+            <button class='btn payNavBtn'  ng-click='chooseCurrency(840)'>USD</button>
+            <button class='btn payNavBtn'  ng-click='chooseCurrency(978)'>EUR</button>
+            <button class='btn payNavBtn'  ng-click='chooseCurrency(616)'>PLN</button>
+        </div>
+    </div>
+    <div class='settingsItem'>
+        <label>{{'DEBUG' | translate}}
+        </label>
+        <div>
+            <button class='btn payNavBtn'  ng-click='chooseDebug(0)'>NO</button>
+            <button class='btn payNavBtn'  ng-click='chooseDebug(1)'>YES</button>
+        </div>
+    </div>
+</div>

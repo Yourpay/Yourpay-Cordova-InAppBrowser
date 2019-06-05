@@ -1,0 +1,26 @@
+<!-- Content -->
+<div class="col-sm-6 col-sm-offset-3 contentLogin">
+<div ng-show="error" class="alert alert-danger">{{error}}</div>
+<img ng-src={{logo}}>
+<h2 class="mPos">Mpos system</h2>
+<form name="form" ng-submit="login()" role="form">
+    <div class="form-group">
+        <i class="fa fa-key"></i>
+        <input class="loginInput form-control" type="text" name="username" id="username" ng-model="username" placeholder="{{'ENTER_USERNAME' | translate}}" required />
+    </div>
+    <div class="form-group">
+        <i class="fa fa-lock"></i>
+        <input class="loginInput form-control" type="password" name="password" id="password" ng-model="password" placeholder="{{'ENTER_PASSWORD' | translate}}" required />
+    </div>
+    <div class="form-actions">
+        <button type="submit" ng-disabled="dataLoading" id="btnlogin" class="btn btnLogin">Login</button>
+        <img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="/>
+    </div>
+    <center>
+        Good to know<br />
+        Yourpay username & password is the same as for admin.yourpay.io<br />
+        <br />
+        This integration includes both our integration towards our PAX-devices, and our InAppBrowser integration.
+    </center>
+</form>
+</div>
